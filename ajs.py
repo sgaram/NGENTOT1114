@@ -340,8 +340,8 @@ def bot(op):
         
         if op.type == 11:
             wait["blacklist"][op.param2] = True
-                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                    try:
+                if cl.getGroup(op.param1).preventedJoinByTicket == False:
+                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         X = cl.getGroup(op.param1)
                         random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                         X.preventedJoinByTicket = True
@@ -349,8 +349,8 @@ def bot(op):
 
         if op.type == 11:
             wait["blacklist"][op.param2] = True
-                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                    try:
+                if ki.getGroup(op.param1).preventedJoinByTicket == False:
+                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         X = ki.getGroup(op.param1)
                         X.preventedJoinByTicket = True
                         random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
@@ -359,8 +359,8 @@ def bot(op):
 
         if op.type == 11:
             wait["blacklist"][op.param2] = True
-                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                    try:
+                if kk.getGroup(op.param1).preventedJoinByTicket == False:
+                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         X = kk.getGroup(op.param1)
                         X.preventedJoinByTicket = True
                         random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
@@ -369,8 +369,8 @@ def bot(op):
 
         if op.type == 11:
             wait["blacklist"][op.param2] = True
-                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                    try:
+                if kc.getGroup(op.param1).preventedJoinByTicket == False:
+                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         X = kc.getGroup(op.param1)
                         X.preventedJoinByTicket = True
                         random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
@@ -379,12 +379,12 @@ def bot(op):
 
         if op.type == 11:
             wait["blacklist"][op.param2] = True
-                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                    try:
-                        X = ke.getGroup(op.param1)
+                if sw.getGroup(op.param1).preventedJoinByTicket == False:
+                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
+                        X = sw.getGroup(op.param1)
                         X.preventedJoinByTicket = True
                         random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
-                        ke.updateGroup(X)
+                        sw.updateGroup(X)
                         random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
 
         if op.type == 13:
